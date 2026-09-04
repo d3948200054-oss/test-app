@@ -1,6 +1,5 @@
 import express from "express";
 import path from "path";
-import { createServer as createViteServer } from "vite";
 import dotenv from "dotenv";
 import { GoogleGenAI } from "@google/genai";
 
@@ -21,9 +20,8 @@ function getGenAI() {
   });
 }
 
-async function startServer() {
+export function createApp() {
   const app = express();
-  const PORT = 3000;
 
   app.use(express.json({ limit: "50mb" }));
   app.use(express.urlencoded({ extended: true, limit: "50mb" }));
@@ -754,8 +752,17 @@ Respond in STRICT JSON:
     }
   });
 
-  // Vite middleware for development
+  return app;
+}
+
+async function startServer() {
+  const app = createApp();
+  const PORT = 3000;
+
+  // Vite middleware for development. Loaded dynamically so production
+  // serverless bundles (Vercel) don't pull Vite into the function.
   if (process.env.NODE_ENV !== "production") {
+    const { createServer: createViteServer } = await import("vite");
     const vite = await createViteServer({
       server: { middlewareMode: true },
       appType: "spa",
@@ -774,4 +781,11 @@ Respond in STRICT JSON:
   });
 }
 
-startServer();
+// Only auto-start when run directly (local dev / local prod).
+// Vercel imports `createApp` via api/index.ts and must not bind a port.
+if (process.env.VERCEL !== "1") {
+  startServer().catch((err) => {
+    console.error("Failed to start server:", err);
+    process.exit(1);
+  });
+}
