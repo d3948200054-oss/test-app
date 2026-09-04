@@ -30,7 +30,7 @@ async function startServer() {
   }
 
   app.listen(PORT, "0.0.0.0", () => {
-    console.log(`Examplus — JEE Advanced AI Study Server running on port ${PORT}`);
+    console.log(`Preppy — JEE Advanced AI Study Server running on port ${PORT}`);
   });
 }
 

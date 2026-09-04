@@ -1,4 +1,4 @@
-# Examplus
+# Preppy
 
 > JEE Advanced AI Study & Mock Test Platform — a full-stack TypeScript app
 > that pairs a React/Vite front end with an Express + Google Gemini back
@@ -13,7 +13,7 @@
 
 ## What it does
 
-Examplus is built first and foremost for **JEE Advanced** aspirants, with
+Preppy is built first and foremost for **JEE Advanced** aspirants, with
 secondary support for NEET, SAT, school board, and Olympiad preparation.
 It combines:
 
@@ -33,7 +33,7 @@ It combines:
 - **AI Test Generator** for teachers — produces a fresh multi-MCQ paper on any
   topic at any difficulty in seconds.
 - **PDF → Online Test Converter** — upload a question paper (PDF or text) and
-  Examplus parses it into a fully structured mock test with marks, negative
+  Preppy parses it into a fully structured mock test with marks, negative
   marking, and step-by-step solutions.
 - **To-Do Proof Verification** — submit study-task completion with optional
   photo evidence; the AI grades the credibility and awards streak bonus points.

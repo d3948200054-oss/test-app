@@ -245,7 +245,7 @@ export const InstantSolver: React.FC = () => {
           <div className="w-12 h-12 rounded-full border-4 border-cyan-400 border-t-transparent animate-spin mx-auto" />
           <h3 className="text-base font-bold text-cyan-300">Formulating Step-by-Step Derivation...</h3>
           <p className="text-xs text-slate-400 max-w-md mx-auto">
-            Examplus AI is checking physical principles, boundary conditions, and optimal examination tricks.
+            Preppy AI is checking physical principles, boundary conditions, and optimal examination tricks.
           </p>
         </div>
       )}
