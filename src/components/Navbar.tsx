@@ -124,7 +124,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               <div>
                 <div className="flex items-center space-x-2">
                   <span className="font-extrabold text-lg sm:text-xl tracking-tight text-white flex items-center gap-1">
-                    ExamPulse
+                    Examplus
                   </span>
                   <span className="px-2 py-0.5 text-[10px] font-bold bg-amber-500/20 text-amber-300 border border-amber-400/40 rounded-full tracking-wide">
                     {isAdmin ? "Admin Suite" : "App"}

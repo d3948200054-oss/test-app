@@ -443,7 +443,7 @@ export const INITIAL_PHONE_HISTORY: PhoneHistoryEntry[] = [
   { appName: "Instagram Reels & Shorts", category: "Distraction / Reels", minutesUsed: 48, icon: "Film" },
   { appName: "YouTube Entertainment", category: "Distraction / Reels", minutesUsed: 32, icon: "Play" },
   { appName: "WhatsApp Chats", category: "Social Media", minutesUsed: 22, icon: "MessageSquare" },
-  { appName: "ExamPulse Test & Notes", category: "Productive", minutesUsed: 115, icon: "BookOpen" },
+  { appName: "Examplus JEE Test & Notes", category: "Productive", minutesUsed: 115, icon: "BookOpen" },
   { appName: "Calculator & Formulas", category: "Productive", minutesUsed: 25, icon: "Cpu" }
 ];
 

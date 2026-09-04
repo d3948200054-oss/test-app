@@ -34,7 +34,7 @@ import { AdminControlPanel } from "./components/admin/AdminControlPanel";
 export default function App() {
   // Theme & Role State
   const [theme, setTheme] = useState<ThemeMode>(() => {
-    return (localStorage.getItem("exampulse_theme") as ThemeMode) || "light";
+    return (localStorage.getItem("examplus_theme") as ThemeMode) || "light";
   });
   const [userRole, setUserRole] = useState<UserRole>("student");
 
@@ -66,7 +66,7 @@ export default function App() {
 
   // Synchronize theme to document root
   useEffect(() => {
-    localStorage.setItem("exampulse_theme", theme);
+    localStorage.setItem("examplus_theme", theme);
     if (theme === "dark") {
       document.documentElement.classList.add("dark");
     } else {

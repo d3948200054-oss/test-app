@@ -1,8 +1,9 @@
-# ExamPulse
+# Examplus
 
-> Online Examination & AI Study System — a full-stack TypeScript platform that pairs
-> a React/Vite front end with an Express + Google Gemini back end to deliver
-> AI-powered mock tests, proctored exams, focus analytics, and a study library.
+> JEE Advanced AI Study & Mock Test Platform — a full-stack TypeScript app
+> that pairs a React/Vite front end with an Express + Google Gemini back
+> end to deliver AI-powered JEE Advanced mock tests, proctored exam rooms,
+> focus analytics, and a handpicked study library.
 
 ![stack](https://img.shields.io/badge/stack-React%2019%20%2B%20Vite%206%20%2B%20Express%204%20%2B%20TypeScript-0b3d91)
 ![runtime](https://img.shields.io/badge/runtime-Node%2020%2B-3c873a)
@@ -12,8 +13,9 @@
 
 ## What it does
 
-ExamPulse is a one-stop preparation workspace for serious students (JEE / NEET / SAT /
-school board / Olympiad level). It combines:
+Examplus is built first and foremost for **JEE Advanced** aspirants, with
+secondary support for NEET, SAT, school board, and Olympiad preparation.
+It combines:
 
 - **Live exam room** with a strict focus mode, fullscreen lock, and proctoring.
 - **AI Question Solver** that takes a typed question or an image (photo of the
@@ -31,7 +33,7 @@ school board / Olympiad level). It combines:
 - **AI Test Generator** for teachers — produces a fresh multi-MCQ paper on any
   topic at any difficulty in seconds.
 - **PDF → Online Test Converter** — upload a question paper (PDF or text) and
-  ExamPulse parses it into a fully structured mock test with marks, negative
+  Examplus parses it into a fully structured mock test with marks, negative
   marking, and step-by-step solutions.
 - **To-Do Proof Verification** — submit study-task completion with optional
   photo evidence; the AI grades the credibility and awards streak bonus points.
